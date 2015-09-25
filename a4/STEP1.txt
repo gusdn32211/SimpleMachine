@@ -1,0 +1,2 @@
+The method pop() was calling free on Element e before it was able to return the name of the element. 
+We therefore had a dangling pointer problem since the pointer was pointing to a memory location which has been deallocated.

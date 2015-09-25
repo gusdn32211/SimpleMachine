@@ -1,0 +1,3 @@
+The bug is located in list_delete_element. We need to check if there are any pointers to an element before we call delete.
+List also has a reference from tree so we need to check that and ensure there is no pointer before we free the element in list, otherwise 
+we end up with a dangling pointer. 

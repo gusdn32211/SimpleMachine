@@ -1,0 +1,7 @@
+1a. The difference between using the stack and register approach is that the register does not call ping by pushing the return address on stack.
+    It directly returns ping when called. The stack appoarch gets a return value after the stack deallocates space.
+
+1b. A benefit for using the stack approach is that it can store multiple values of return address for programs that calls multiple functions
+    that needs returns. Unlike the register approach, the stack approach can access all the values without overriding.
+
+1c. A benefit for using the register approach is that the whole process happens a lot faster and simpler than the stack approach.
